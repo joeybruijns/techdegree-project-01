@@ -9,7 +9,7 @@ def divide_players(player, team):
 # write data function
 def write_file(team, players):
     # open file
-    with open("teams.txt", "a") as file:
+    with open("teams.txt", "w") as file:
         # write to file: team name => player: name, experience and guardian names
         file.write(team + '\n')
         for item in players:
